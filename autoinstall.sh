@@ -81,7 +81,5 @@ chmod 755 delete_log.sh
 cd $OPENSHIFT_DATA_DIR/conf
 rm nginx.conf
 wget --no-check-certificate https://github.com/tcpit/openshift-nginx-proxy/raw/master/nginx.conf
-sed -i "s/OPENSHIFT_DIY_IP/$OPENSHIFT_DIY_IP/g" nginx.conf
-sed -i "s/xxx-xxx.rhcloud.com/$OPENSHIFT_APP_DNS/g" nginx.conf
 gear stop
 gear start
